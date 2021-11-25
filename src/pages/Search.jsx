@@ -12,6 +12,7 @@ const Search = () => {
     const result = items.filter(item => {
         if (regex.test(item?.name))
             return item
+        return null
     })
 
     return (
