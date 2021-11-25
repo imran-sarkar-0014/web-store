@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Item = (props) => {
     const { item } = props
     return (
-        <Link to={`/item/${item.id}`} className='flex sm:grid'>
+        <Link to={`/item/${item.id}`} className='flex sm:grid hover:bg-blue-100'>
             <div className="relative min-w-max rounded-lg p-4 bg-white mx-auto w-max shadow-md">
                 <img className="md:w-40 md:h-40 h-32 w-32 object-contain" src={item.image_url} alt="" />
 
