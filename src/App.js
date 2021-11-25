@@ -13,7 +13,6 @@ import Search from './pages/Search';
 
 function App() {
 
-
   return (
     <div className='bg-gray-100 min-w-full overflow-x-hidden'>
       <Header />

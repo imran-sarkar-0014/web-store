@@ -22,7 +22,7 @@ const Header = () => {
             {/* top layer  */}
             <div className='flex items-center justify-between py-2 px-4'>
                 <Link to='/' className='cursor-pointer' >
-                    <img className='h-8' src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1HOIkg3ZC2uNjSZFnXXaxZpXa.png" />
+                    <img alt='logo' className='h-8' src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1HOIkg3ZC2uNjSZFnXXaxZpXa.png" />
                 </Link>
                 {/* Input */}
                 <form onSubmit={handleSubmit} className='hidden sm:flex md:items-between mx-4 max-w-md flex-1 h-10 bg-white w-auto rounded-md overflow-hidden'>
@@ -37,7 +37,7 @@ const Header = () => {
                 <div className='flex items-center space-x-4'>
                     <div className='flex items-center cursor-pointer'>
                         <p className='font-semibold'>Sign In </p>
-                        <img className='h-6 font-bold' src="/assests/user.png" />
+                        <img className='h-6 font-bold' src="/assests/user.png" alt='logo' />
                     </div>
 
                     <div className="relative cursor-pointer p-1 rounded-xl">
