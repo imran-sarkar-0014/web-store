@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import items from '../data/items.json'
 import { useParams } from 'react-router-dom'
 
@@ -7,6 +7,16 @@ const ItemView = () => {
     const params = useParams()
     const filter = items.filter(it => it.id === params.id)
     const [count, setCount] = useState(1)
+    const topRef = useRef(null)
+
+    useEffect(() => {
+        if (topRef?.current != null)
+            topRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "start"
+            });
+    }, [])
 
 
     const addCount = (add) => {
@@ -29,6 +39,7 @@ const ItemView = () => {
 
     return (
         <div className=''>
+            <div ref={topRef}></div>
 
             {/*  Top view  */}
             <div className=' max-w-xl mx-auto flex space-x-4 border-b border-gray-300 mb-2 pb-4 items-center'>
