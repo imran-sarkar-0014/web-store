@@ -44,7 +44,7 @@ const helpUs = [
 
 const Footer = () => {
     return (
-        <div className='bg-gray-700 text-white space-y-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 px-2 mt-8 pt-4'>
+        <div className='bg-gray-700 text-white space-y-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols- mt-8 pt-4 px-4 sm:px-8 md:px-10 lg:px-12'>
 
             {/* Get to know us */}
             <ul className='pt-3'>

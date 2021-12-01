@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Item = (props) => {
     const { item } = props
     return (
-        <Link to={`/item/${item.id}`} className='flex sm:grid hover:bg-blue-100'>
+        <Link to={`/item/${item.id}`} className='flex sm:grid hover:bg-blue-100 group'>
             <div className="relative min-w-max rounded-lg p-4 bg-white mx-auto w-max shadow-md">
                 <img className="md:w-40 md:h-40 h-32 w-32 object-contain" src={item.image_url} alt="" />
 
@@ -14,7 +14,7 @@ const Item = (props) => {
             </div>
             <div className='py-1 px-2 mx-2'>
                 <h3 className="md:font-semibold  text-sm p-r-2"  >{item.name}</h3>
-                <p className="font-bold text-xl py-2 px-2">${item.price}</p>
+                <p className="font-bold max-w-auto text-xl py-2 px-2 ">${item.price}</p>
                 <div className="flex">
                     {
                         item?.rating?.major.map(i => (
